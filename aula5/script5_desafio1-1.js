@@ -12,18 +12,10 @@ Qual a condição para mostrar uma das mensagens abaixo? >=6
 "Aprovado"
 "Reprovado"
 */
-// Código do GUSTAVO LUIS DOS SANTOS
-let av1, av2, media;
+//LUCAS ARAUJO DOS SANTOS
+let av1 = parseFloat(prompt("Av1 nota"));
+let av2 = parseFloat(prompt("AV2 nota"));
+let media = (av1 + av2) / 2;
 const saida=document.querySelector(".saida");
-
-av1 = parseFloat(prompt("Digite a primeira nota: "));
-av2 = parseFloat(prompt("Digite a segunda nota: "));
-
-media = (av1+av2)/2;
-
-if (media>=6){
-    saida.innerHTML=`A sua média foi ${media}, você foi APROVADO`
-}
-else {
-    saida.innerHTML=`A sua média foi ${media} e você foi REPROVADO`
-}
+msg = media >=6 ?"Aprovado":"Reprovado";
+saida.innerHTML=`Nota Av1:${av1}<br> Nota Av2:${av2} <br>${media} - ${msg}`;
