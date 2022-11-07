@@ -54,6 +54,6 @@ i=0;
 while(i<=10){
     saida.innerHTML+=i + " ";
     //i++;//contador //i=i+1  //i+=1
-    i+=4;
+    i+=4;//i=i+4
 }
 saida.innerHTML+="<hr>";
