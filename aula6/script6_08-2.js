@@ -15,7 +15,11 @@ Utilizar for in
 */
 const saida=document.querySelector('.saida');
 const produto=["monitor","teclado","mouse"];
-
+let i=0;
 for(let j in produto){
-    saida.innerHTML+=`< h${j}>${produto[j]}< /h${j}>`;
+    i++;
+    //j=parseInt(j);
+    //i=j+1;
+    saida.innerHTML+=`<h${i}>${produto[j]}</h${i}>`;
+    //saida.innerHTML+=`${j}<br>`;
 }
