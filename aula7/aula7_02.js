@@ -20,6 +20,8 @@ const btn2=document.querySelector(".btn2");
 
 btn1.onclick=calcmedia;
 
+btn2.addEventListener("click", calcmedia);
+
 function boas_vindas(){//construção da função
     saida.innerHTML+="Seja bem vindo!<br>";
 }
