@@ -17,10 +17,14 @@ const av1=document.querySelector("#av1");
 const av2=document.querySelector("#av2");
 const btn1=document.querySelector(".btn1");
 const btn2=document.querySelector(".btn2");
-
+/*
+executar as duas funções nos botões btn1 e btn2
+*/
 btn1.onclick=calcmedia;
+btn1.onclick=boas_vindas;
 
 btn2.addEventListener("click", calcmedia);
+btn2.addEventListener("click", boas_vindas);
 
 function boas_vindas(){//construção da função
     saida.innerHTML+="Seja bem vindo!<br>";
