@@ -23,15 +23,15 @@ executar as duas funções nos botões btn1 e btn2
 btn1.onclick=calcmedia;
 btn1.onclick=boas_vindas;
 
-btn2.addEventListener("click", calcmedia);
 btn2.addEventListener("click", boas_vindas);
+btn2.addEventListener("click", calcmedia);
 
 function boas_vindas(){//construção da função
-    saida.innerHTML+="Seja bem vindo!<br>";
+    saida.innerHTML="Seja bem vindo!<br>";
 }
 function calcmedia(){
     let media=(parseFloat(av1.value)+parseFloat(av2.value))/2;
-    saida.innerHTML=`Nome: ${nome.value}<br>`;
+    saida.innerHTML+=`Nome: ${nome.value}<br>`;
     saida.innerHTML+=`AV1:  ${av1.value}<br>`;
     saida.innerHTML+=`AV2:  ${av2.value}<br>`;
     saida.innerHTML+=`Média:  ${media}<br>`;
